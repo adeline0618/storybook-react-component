@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledButton = styled.button`
-  width: 130px;
-  height: 40px;
+  width: ${props => props.width || "200"}px;
+  height: ${props => props.heigth || "40"}px;
   color:${props => props.textColor || "#0000008d"};
   border-radius: 0.2rem;
   padding: 10px 25px;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: ${props => props.fontSize || "18px"};
+  font-size: ${props => props.fontSize || "18"}px;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -23,7 +23,7 @@ const StyledButton = styled.button`
   background:linear-gradient(0deg, ${props =>
     props.color2 || "#e7e6b89d"} 0%, ${props =>
   props.color1 || " #bb95fc9d"} 100%);
-    line-height:42px;
+    line-height:${props => props.heigth || "40"}px;
     padding: 0;
     border: none;
   
@@ -31,7 +31,7 @@ const StyledButton = styled.button`
     position: relative;
     display: block;
     width: 100%;
-    height: 100%;
+    height: 100%
   }
   ::before,
   ::after {
@@ -95,12 +95,22 @@ const StyledButton = styled.button`
     width: 100%;
 `;
 
-const Button = ({ color1, color2, text, textColor, fontSize }) => (
+const Button = ({
+  color1,
+  color2,
+  text,
+  textColor,
+  width,
+  heigth,
+  fontSize,
+}) => (
   <StyledButton
+    width={width}
     color1={color1}
     color2={color2}
     fontSize={fontSize}
     textColor={textColor}
+    heigth={heigth}
   >
     <span>{text ? text : "Click"}</span>
   </StyledButton>

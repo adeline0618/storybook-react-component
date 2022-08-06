@@ -11,8 +11,15 @@ export default {
     color2: { control: "color" },
     textColor: { control: "color" },
     text: { control: "text" },
+
     fontSize: {
-      control: { type: "radio", options: ["16px", "20px", "24px", "28px"] },
+      control: { type: "number" },
+    },
+    width: {
+      control: { type: "number" },
+    },
+    heigth: {
+      control: { type: "number" },
     },
   },
 };
