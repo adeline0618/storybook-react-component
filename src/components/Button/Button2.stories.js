@@ -1,27 +1,28 @@
 // 컴포넌트를 불러옵니다.
-import Button from "./Button";
+import Button2 from "./Button2";
 
 export default {
   title: "JS/Button",
-  component: Button,
+  component: Button2,
 
   // 이번에 작성한 전달인자의 타입은 Storybook을 보고 직접 확인해보세요.
   argTypes: {
     color1: { control: "color" },
     color2: { control: "color" },
     textColor: { control: "color" },
+    textHoverColor: { control: "color" },
     text: { control: "text" },
 
     fontSize: {
       control: { type: "number" },
     },
-    width: {
+    paddingWidth: {
       control: { type: "number" },
     },
-    heigth: {
+    paddingHeight: {
       control: { type: "number" },
     },
   },
 };
 
-export const GradientButton = args => <Button {...args}></Button>;
+export const ShineButton = args => <Button2 {...args}></Button2>;

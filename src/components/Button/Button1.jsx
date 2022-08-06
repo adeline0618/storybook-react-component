@@ -95,7 +95,7 @@ const StyledButton = styled.button`
     width: 100%;
 `;
 
-const Button = ({
+const Button1 = ({
   color1,
   color2,
   text,
@@ -115,4 +115,4 @@ const Button = ({
     <span>{text ? text : "Click"}</span>
   </StyledButton>
 );
-export default Button;
+export default Button1;
