@@ -1,8 +1,8 @@
-import Button2 from "./Button2";
+import Button3 from "./Button3";
 
 export default {
   title: "JS/Button",
-  component: Button2,
+  component: Button3,
 
   argTypes: {
     color1: { control: "color" },
@@ -14,13 +14,13 @@ export default {
     fontSize: {
       control: { type: "number" },
     },
-    paddingWidth: {
+    width: {
       control: { type: "number" },
     },
-    paddingHeight: {
+    height: {
       control: { type: "number" },
     },
   },
 };
 
-export const ShineButton = args => <Button2 {...args}></Button2>;
+export const BlobButton = args => <Button3 {...args}></Button3>;

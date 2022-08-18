@@ -22,7 +22,7 @@ const StyledButton = styled.button`
 
   background:linear-gradient(0deg, ${props =>
     props.color2 || "#e7e6b89d"} 0%, ${props =>
-  props.color1 || " #bb95fc9d"} 100%);
+  props.color1 || "#bb95fc9d"} 100%);
     line-height:${props => props.heigth || "40"}px;
     padding: 0;
     border: none;
